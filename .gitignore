@@ -33,3 +33,4 @@ Pipfile.lock
 poetry.lock
 
 
+agentic_trading_system.egg-info
