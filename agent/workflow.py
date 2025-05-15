@@ -18,8 +18,13 @@ class GraphBuilder:
         self.llm_with_tools = llm_with_tools
         self.graph = None
 
-    def _chatbot_node(self,state:State):
-         return {"messages": [self.llm_with_tools.invoke(state["messages"])]}
+    # def _chatbot_node(self,state:State):
+    #      return {"messages": [self.llm_with_tools.invoke(state["messages"])]}
+    def _chatbot_node(self, state: State):
+        print("Running chatbot node with messages:", state["messages"])
+        response = self.llm_with_tools.invoke(state["messages"])
+        print("LLM response:", response)
+        return {"messages": [response]}
     
     def build(self):
         graph_builder = StateGraph(State)

@@ -53,3 +53,6 @@ tavilytool = TavilySearchResults(
 )
 
 financials_tool = PolygonFinancials(api_wrapper=api_wrapper)
+# result = financials_tool.invoke({"query": "AAPL"})
+# print("financials_tool result for AAPL:", result)
+
