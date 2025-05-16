@@ -46,10 +46,11 @@ Grok API (optional, for additional AI capabilities)
 
 
 🚀 Setup Instructions
+
 1. Clone the Repository
 Clone the project from GitHub:
 
-bash
+
 
 Copy
 git clone https://github.com/kharishgit/agentic-trading-bot.git
@@ -57,7 +58,7 @@ cd agentic-trading-bot
 2. Create a Virtual Environment
 Set up a Python virtual environment to manage dependencies:
 
-bash
+
 
 Copy
 python -m venv venv
@@ -65,13 +66,13 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 3. Install Dependencies
 Install the required Python packages:
 
-bash
+
 
 Copy
 pip install -r requirements.txt
 If a requirements.txt file doesn’t exist, install the following packages manually:
 
-bash
+
 
 Copy
 pip install streamlit fastapi uvicorn requests langchain langchain-community pinecone-client python-dotenv
@@ -156,7 +157,7 @@ Sends user queries to the backend and displays the chat history.
 Key Components:
 File uploader for stock market documents.
 Chat form with persistent history using st.session_state.
-Backend (Assumed app.py)
+Backend (main.py)
 Purpose: Handles API requests from the frontend, processes queries, and fetches data.
 Endpoints:
 /upload: Processes uploaded documents for RAG.
